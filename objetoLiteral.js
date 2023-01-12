@@ -10,9 +10,16 @@ const user = {
 }
 // user.exibirInfos();
 
-//  operator BIND(ligando ao objeto)
-const exibindo = function () {
-    console.log(this.nome);
+const admin = {
+    nome: 'mariana',
+    email: 'mari@gmail.com',
+    role: 'admin',
+    criarCurso() {
+        console.log('curso criado');
+    }
 }
-const exibindoNome = exibindo.bind(user)
-exibindoNome()
+
+// herdando propriedades // admin pegando function exibirInfos()
+Object.setPrototypeOf(admin, user);
+admin.criarCurso();
+admin.exibirInfos();
