@@ -10,6 +10,6 @@ export default class Admin extends User {
     }
 }
 
-const newAdmin = new Admin(`gabriel`, `gabs76@gmail.com`, `11/01/2000`);
-console.log(newAdmin);
-console.log(newAdmin.criarCurso(`javascript`, 40));
+// const newAdmin = new Admin(`gabriel`, `gabs76@gmail.com`, `11/01/2000`);
+// console.log(newAdmin);
+// console.log(newAdmin.criarCurso(`javascript`, 40));
